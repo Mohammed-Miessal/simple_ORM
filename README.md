@@ -15,6 +15,21 @@ The `Database` class provides a simple interface for establishing a connection t
 $database = new Database();
 ```
 
+## Connection Details
+
+The connection details are fetched from the `config.php` file, which should define the following global variables:
+
+- `$host`: The database host.
+- `$username`: The database username.
+- `$password`: The database password.
+- `$database`: The database name.
+
+## Get Database Connection (PHP)
+
+```php
+// Get the PDO database connection
+$connection = $database->getConnection();
+```
 
 
 

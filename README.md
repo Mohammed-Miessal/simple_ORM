@@ -13,7 +13,7 @@ The `Categorie` class provides a simple interface for CRUD operations on the 'ca
 ```php
 // Creating an instance of the Categorie class
 $categorie = new Categorie();
-
+```
 
 ## Create a Category (PHP)
 

@@ -35,6 +35,22 @@ $result = $categorie->readCategory(1);
 print_r($result);
 ```
 
+## Update a Category (PHP)
+
+```php
+// Example of updating a record in the "categories" table
+$data = ['id' => 1, 'name' => 'Updated Category', 'description' => 'Updated description'];
+$result = $categorie->updateCategory($data);
+
+if ($result) {
+    echo "Category updated successfully!";
+} else {
+    echo "Error updating the category.";
+}
+```
+
+```
+
 
 
 }

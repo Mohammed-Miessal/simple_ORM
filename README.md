@@ -1,3 +1,15 @@
+# Database Configuration
+
+The following PHP code snippet defines the configuration details for connecting to a MySQL database:
+
+```php
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "testOOP";
+```
+
+
 # Database Class
 
 The `Database` class provides a simple interface for establishing a connection to a MySQL database using PDO (PHP Data Objects). The connection details are retrieved from an external `config.php` file.

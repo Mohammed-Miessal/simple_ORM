@@ -13,3 +13,17 @@ The `Categorie` class provides a simple interface for CRUD operations on the 'ca
 ```php
 // Creating an instance of the Categorie class
 $categorie = new Categorie();
+
+
+## Create a Category (PHP)
+
+```php
+// Example of creating a new record in the "categories" table
+$data = ['name' => 'My Cate', 'description' => 'This is my own Categorie'];
+$result = $categorie->createCategory($data);
+
+if ($result) {
+    echo "Category added successfully!";
+} else {
+    echo "Error adding the category.";
+}

@@ -1,6 +1,10 @@
 <?php
-// This script is for Static CRUD
+
 require_once 'Database.php';
+
+
+// This script is for Static CRUD
+
 class User {
     private $conn;
 
@@ -53,17 +57,17 @@ class User {
 
 $user = new User();
 
-// Example of creating a new user
-$user->createUser("john_doe", "john@example.com", "password123");
+// // Example of creating a new user
+// $user->createUser("Mohammed Miessal", "mohammedmiessal@gmail.com", "password123");
 
-// Example of reading a user by ID
-$userId = 1;
-$userData = $user->readUser($userId);
-print_r($userData);
+// //  Example of reading a user by ID
+ $userId = 1;
+ $userData = $user->readUser($userId);
+ print_r($userData);
 
-// Example of updating a user
-$user->updateUser(1, "john_updated", "john_updated@example.com", "new_password");
+// // Example of updating a user
+// $user->updateUser(1, "john_updated", "john_updated@example.com", "new_password");
 
-// Example of deleting a user
-$user->deleteUser(1);
+// // Example of deleting a user
+// $user->deleteUser(5);
 

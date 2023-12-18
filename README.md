@@ -26,4 +26,15 @@ if ($result) {
     echo "Category added successfully!";
 } else {
     echo "Error adding the category.";
+```
+## Read a Category (PHP)
+
+```php
+// Example of reading a record from the "categories" table by ID
+$result = $categorie->readCategory(1);
+print_r($result);
+```
+
+
+
 }

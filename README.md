@@ -60,7 +60,5 @@ if ($result) {
     echo "Error deleting the category.";
 }
 
-
-
 }
 ```

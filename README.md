@@ -31,7 +31,26 @@ The connection details are fetched from the `config.php` file, which should defi
 $connection = $database->getConnection();
 ```
 
+## Destructor
 
+The class includes a destructor method to close the database connection when the object is destroyed.
+
+```php
+public function __destruct() {
+    $this->conn = null;
+}
+
+```
+
+## Example Usage (PHP)
+
+```php
+// Creating an instance of the Database class
+$database = new Database();
+
+// Example of getting the PDO database connection
+$connection = $database->getConnection();
+```
 
 
 

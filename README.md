@@ -1,3 +1,25 @@
+# Database Class
+
+The `Database` class provides a simple interface for establishing a connection to a MySQL database using PDO (PHP Data Objects). The connection details are retrieved from an external `config.php` file.
+
+## Installation
+
+1. Ensure that the `config.php` file is available in the same directory as the `Database` class.
+
+## Usage
+
+### Initialization
+
+```php
+// Creating an instance of the Database class
+$database = new Database();
+```
+
+
+
+
+
+
 # Categorie Class
 
 The `Categorie` class provides a simple interface for CRUD operations on the 'categories' table in a database. It utilizes a `crud` object to perform these operations.

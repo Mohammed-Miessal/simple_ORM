@@ -3,9 +3,10 @@
 require_once 'crud.php';
 
 class Categorie {
-
+   // '$crud' utilisée pour stocker une instance de la classe crud
     private $crud;
 
+    // chaque fois qu'un objet Categorie est créé, il aura une instance de la classe 'crud'
     public function __construct() {
         $this->crud = new crud();
     }
@@ -32,7 +33,7 @@ class Categorie {
 // Usage example:
 
 $categorie = new Categorie();
-var_dump($categorie);
+
 
 // // Example of creating a new record in the "categories" table
 // $data = ['name' => 'My Cate', 'description' => 'This is my own Categorie'];

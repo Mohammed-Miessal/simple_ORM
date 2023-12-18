@@ -8,7 +8,7 @@ class crud
         $db = new Database();
         $this->conn = $db->getConnection();
     }
-  // public
+
     public function executeQuery($table, $action, $data) {
         switch ($action) {
             case 'create':
@@ -24,7 +24,7 @@ class crud
         }
     }
 
-    // private
+
     public function createRecord($table, $data) {
         $columns = implode(', ', array_keys($data));
         $values = implode(', ', array_fill(0, count($data), '?'));
@@ -36,7 +36,7 @@ class crud
         return $stmt->rowCount() > 0;
     }
 
-    // private
+
     public function readRecord($table, $id) {
         $sql = "SELECT * FROM $table WHERE id = ?";
         $stmt = $this->conn->prepare($sql);
@@ -45,7 +45,7 @@ class crud
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    // private
+
     public function updateRecord($table, $id, $data) {
         $setClause = implode('=?, ', array_keys($data)) . '=?';
 
@@ -56,7 +56,7 @@ class crud
         return $stmt->rowCount() > 0;
     }
 
-    // private
+
     public function deleteRecord($table, $id) {
         $sql = "DELETE FROM $table WHERE id=?";
         $stmt = $this->conn->prepare($sql);
@@ -65,7 +65,7 @@ class crud
         return $stmt->rowCount() > 0;
     }
 
-    // public
+
     public function __destruct() {
         $this->conn = null;
     }

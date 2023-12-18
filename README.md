@@ -59,7 +59,7 @@ if ($result) {
 } else {
     echo "Error deleting the category.";
 }
-```
+
 
 
 }

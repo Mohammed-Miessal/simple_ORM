@@ -1,6 +1,7 @@
 # Database Configuration
 
 This is config.php file.
+
 The following PHP code snippet defines the configuration details for connecting to a MySQL database:
 
 ```php

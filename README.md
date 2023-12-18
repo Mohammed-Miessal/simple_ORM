@@ -47,10 +47,6 @@ if ($result) {
 } else {
     echo "Error updating the category.";
 }
-```
-
-```
-
-
 
 }
+```

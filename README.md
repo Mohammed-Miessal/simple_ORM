@@ -47,6 +47,20 @@ if ($result) {
 } else {
     echo "Error updating the category.";
 }
+```
+## Delete a Category (PHP)
+
+```php
+// Example of deleting a record from the "categories" table
+$result = $categorie->deleteCategory(20);
+
+if ($result) {
+    echo "Category deleted successfully!";
+} else {
+    echo "Error deleting the category.";
+}
+```
+
 
 }
 ```
